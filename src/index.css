@@ -27,6 +27,9 @@ a{
   margin: auto;
   background-color: var(--background)
 }
+.app.dark{
+  background-color: var(--background-dark);
+}
 @keyframes fadeIn {
   0%{
     opacity: 0;

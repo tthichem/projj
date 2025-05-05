@@ -1,0 +1,57 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .filter h1 {
+    text-align: center;  
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 60px;
+  }
+  
+  .filter-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+  .filter-list h2 {
+    background-color: #0077b6;
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 60px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .filter-list h2:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  .filter-items .active {
+    background-color: #ccc;
+    color: #262626;
+    padding: 2px;
+    transition: 0.3s;
+  }
+  h1.dark, h2.dark {
+    color: #faf4d3;
+  }
+  h2.dark:hover {
+    background-color: #faf4d3;
+    color: #262626;
+  }
+  
+  @media (max-width: 1050px) {
+    .filter-list {
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+  
